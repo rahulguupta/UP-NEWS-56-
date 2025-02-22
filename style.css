@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #003087;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+#searchBar {
+    width: 80%;
+    max-width: 400px;
+    padding: 8px;
+    margin-top: 10px;
+}
+
+main {
+    padding: 20px;
+}
+
+.news-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.news-card h2 {
+    margin: 0 0 5px;
+}
+
+.news-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+    #searchBar {
+        width: 100%;
+    }
+}
