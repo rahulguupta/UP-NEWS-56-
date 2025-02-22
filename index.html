@@ -1,21 +1,46 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My News Portal</title>
+    <title>My News Portal - Like Times of India</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>My News Portal</h1>
+        <div class="logo">
+            <img src="assets/logo.png" alt="My News Portal Logo" width="150">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="categories.html?category=politics">Politics</a></li>
+                <li><a href="categories.html?category=sports">Sports</a></li>
+                <li><a href="categories.html?category=entertainment">Entertainment</a></li>
+            </ul>
+        </nav>
         <input type="text" id="searchBar" placeholder="Search news...">
     </header>
     <main>
-        <section id="newsContainer">
-            <!-- News articles will be dynamically inserted here -->
+        <section id="top-stories">
+            <h2>Top Stories</h2>
+            <div id="newsContainer">
+                <!-- News articles will be dynamically inserted here -->
+            </div>
+        </section>
+        <section id="categories">
+            <h2>Categories</h2>
+            <div class="category-grid">
+                <a href="categories.html?category=politics">Politics</a>
+                <a href="categories.html?category=sports">Sports</a>
+                <a href="categories.html?category=entertainment">Entertainment</a>
+            </div>
         </section>
     </main>
+    <footer>
+        <p>&copy; 2025 My News Portal. All rights reserved.</p>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
